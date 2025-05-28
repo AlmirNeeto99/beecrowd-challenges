@@ -10,4 +10,6 @@ clean:
 	rm $(NAME)
 
 build: $(SOURCES)
+	@echo "-> Building problem $(problm)"
 	$(CC) $(SOURCES) -o $(NAME)
+	@echo "-> Done!"
