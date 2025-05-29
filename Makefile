@@ -1,6 +1,6 @@
 CC=g++
 LINK=-lm
-FLAGS=-Wall -g
+FLAGS=-Wall -g -O2
 
 NAME=solution
 
