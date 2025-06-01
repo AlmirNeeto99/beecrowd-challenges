@@ -1,6 +1,6 @@
 CC=g++
 LINK=-lm
-FLAGS=-Wall -g -O2
+FLAGS=-Wall -g -O2 -std=c++20
 
 NAME=solution
 
@@ -10,6 +10,6 @@ clean:
 	rm $(NAME)
 
 build: $(SOURCES)
-	@echo "-> Building problem $(problm)"
-	$(CC) $(SOURCES) -o $(NAME)
+	@echo "-> Building problem $(problem)"
+	$(CC) $(SOURCES) -o $(NAME) $(LINK) $(FLAGS)
 	@echo "-> Done!"
